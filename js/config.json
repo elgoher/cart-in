@@ -1,30 +1,33 @@
 {
-    "tags": {
-        "add-buton": {
+    "selectors": {
+        "add_button": {
             "type": "class",
             "name": "add"
         },
-        "article-title": {
+        "article_title": {
             "type": "class",
             "name": "desc"
         },
-        "article-desc": {
+        "article_desc": {
             "type": "class",
             "name": "desc"
         },
-        "buy-button": {
+        "buy_button": {
             "type": "class",
             "name": "buy"
         }
     },
     "types": {
         "class": {
+        	"text":"class",
             "symbol": "."
         },
         "id": {
+        	"text":"id",
             "symbol": "#"
         },
         "data": {
+        	"text":"data",
             "symbol_prev": "[",
             "symbol_next": "]"
         }

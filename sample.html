@@ -15,25 +15,10 @@
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <script type="text/javascript">
-             // Add a script element as a child of the body
-             function downloadJSAtOnload() {
-             var element = document.createElement("script");
-             element.src = "js/cart.js";
-             document.body.appendChild(element);
-             }
-
-             // Check for browser support of event handling capability
-             if (window.addEventListener)
-             window.addEventListener("load", downloadJSAtOnload, false);
-             else if (window.attachEvent)
-             window.attachEvent("onload", downloadJSAtOnload);
-             else window.onload = downloadJSAtOnload;
-        </script>
         <script src="js/cart.js"></script>
 </head>
 <body>
-<!--emmet code => main>section>(article>(p.titulo{Articulo $}+img+p.desc{Descripcion $}+div>a.add[href="#" onclick="AddToCart(this);"]))*5 -->
+<!--emmet code => main>section>(article>(p.titulo{Articulo $}+img+p.desc{Descripcion $}+div>a.add[href="#" ]))*5 -->
  <head>
      <h1>muestra de vitrina para cart-in</h1>
  </head>

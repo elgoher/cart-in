@@ -1,14 +1,23 @@
-
 var config;
-function init (e) {
-	console.log('inicializando');
 
-	$.getJSON( "js/config.json", function( data ) {
-			console.log( data );
-			config = data;
-	});
+function get_selector (types, sel_obj) {
+	var selector;
+	  jQuery.map(types, function(obj) {
+            if (obj.text === sel_obj.type)
+                selector = obj.symbol + sel_obj.name;
+        });
+	  return selector;
+}
 
-	$('.add').on("click", AddToCart);
+function init() {
+    var add, selector;
+    console.log('inicializando');
+    $.getJSON("js/config.json", function(data) {
+        config = data;
+        add = data.selectors.add_button;
+      	selector = get_selector(data.types,add);
+        $(selector).on("click", AddToCart);
+    });
 }
 
 function AddToCart(e) {
@@ -18,8 +27,8 @@ function AddToCart(e) {
     // 	    url: "",
     //         type: "POST",
     //         cache: false,
-	//      data: {
-	  
+    //      data: {
+
     //         }, 
     // });
 }
