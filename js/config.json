@@ -1,0 +1,32 @@
+{
+    "tags": {
+        "add-buton": {
+            "type": "class",
+            "name": "add"
+        },
+        "article-title": {
+            "type": "class",
+            "name": "desc"
+        },
+        "article-desc": {
+            "type": "class",
+            "name": "desc"
+        },
+        "buy-button": {
+            "type": "class",
+            "name": "buy"
+        }
+    },
+    "types": {
+        "class": {
+            "symbol": "."
+        },
+        "id": {
+            "symbol": "#"
+        },
+        "data": {
+            "symbol_prev": "[",
+            "symbol_next": "]"
+        }
+    }
+}

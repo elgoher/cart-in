@@ -1,18 +1,38 @@
 
+var config;
+function init (e) {
+	console.log('inicializando');
 
-function AddToCart() {
-    console.log("agregando");
+	$.getJSON( "js/config.json", function( data ) {
+			console.log( data );
+			config = data;
+	});
+
+	$('.add').on("click", AddToCart);
+}
+
+function AddToCart(e) {
+    alert('agregando articulo');
+    console.log(e.currentTarget);
+    // $.ajax({
+    // 	    url: "",
+    //         type: "POST",
+    //         cache: false,
+	//      data: {
+	  
+    //         }, 
+    // });
+}
+
+function buy(e) {
 
 }
 
-function buy(argument) {
+function ListArticles(e) {
 
 }
 
-function ListArticles(argument) {
-
-}
-
-$(document).on("ready", function(event) {
+$(document).on("ready", function() {
     console.log("js cargado");
+    init();
 });
