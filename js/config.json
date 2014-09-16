@@ -1,20 +1,28 @@
 {
     "selectors": {
-        "add_button": {
-            "type": "class",
-            "name": "add"
-        },
         "article_title": {
             "type": "class",
-            "name": "desc"
+            "name": "title"
         },
         "article_desc": {
             "type": "class",
             "name": "desc"
         },
+        "article_price": {
+            "type": "class",
+            "name": "price"
+        },
+        "article_stock": {
+            "type": "class",
+            "name": "stock"
+        },
         "buy_button": {
             "type": "class",
             "name": "buy"
+        },
+        "add_button": {
+            "type": "class",
+            "name": "add"
         }
     },
     "types": {
