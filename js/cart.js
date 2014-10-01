@@ -9,6 +9,25 @@ function get_selector(types, sel_obj) {
     return selector;
 }
 
+function start_server(event) {
+	 $.ajax({
+        url: '',
+        type: "POST",
+        cache: false,
+        success: function (mensaje){
+         if(!mensaje){
+            event.stopImmediatePropagation();
+            
+         
+         }
+        },
+        error: function (xhr, status, error) { 
+           console.log('desde val session: '+xhr.responseText);
+            return false;
+        }    
+    });
+}
+
 function init() {
     console.log('inicializando');
     $.getJSON("js/config.json", function(data) {
@@ -26,7 +45,10 @@ function init() {
             }
         });
     });
+    start_server();
 }
+
+
 
 function AddToCart(e) {
     alert('agregando articulo');
